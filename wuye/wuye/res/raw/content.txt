@@ -1,0 +1,119 @@
+{
+    "content": [
+        {
+            "content_id": "1",
+            "content_title": "客服管理",
+            "content_menu": [
+                {
+                    "type_id": "1",
+                    "type_name": "公告管理",
+                    "type_type": "customer"
+                },
+                {
+                    "type_id": "2",
+                    "type_name": "档案管理",
+                    "type_type": "customer"
+                },
+                {
+                    "type_id": "3",
+                    "type_name": "报修管理",
+                    "type_type": "customer"
+                },
+                {
+                    "type_id": "4",
+                    "type_name": "小区投诉",
+                    "type_type": "customer"
+                },
+                {
+                    "type_id": "5",
+                    "type_name": "物业费",
+                    "type_type": "customer"
+                }
+            ]
+        },
+        {
+            "content_id": "2",
+            "content_title": "服务管理",
+            "content_menu": [
+                {
+                    "type_id": "6",
+                    "type_name": "服务管理",
+                    "type_type": "service"
+                },
+                {
+                    "type_id": "7",
+                    "type_name": "预定服务",
+                    "type_type": "service"
+                },
+                {
+                    "type_id": "8",
+                    "type_name": "订单管理",
+                    "type_type": "service"
+                }
+            ]
+        },
+        {
+            "content_id": "3",
+            "content_title": "业主信息",
+            "content_menu": [
+                {
+                    "type_id": "9",
+                    "type_name": "楼宇信息",
+                    "type_type": "owner"
+                },
+                {
+                    "type_id": "10",
+                    "type_name": "房产信息",
+                    "type_type": "owner"
+                },
+                {
+                    "type_id": "11",
+                    "type_name": "停车位",
+                    "type_type": "owner"
+                },
+                {
+                    "type_id": "12",
+                    "type_name": "认证申请",
+                    "type_type": "owner"
+                }
+            ]
+        },
+        {
+            "content_id": "4",
+            "content_title": "人事管理",
+            "content_menu": [
+                {
+                    "type_id": "13",
+                    "type_name": "部门设置",
+                    "type_type": "personnel"
+                },
+                {
+                    "type_id": "14",
+                    "type_name": "员工管理",
+                    "type_type": "personnel"
+                },
+                {
+                    "type_id": "15",
+                    "type_name": "职位设置",
+                    "type_type": "personnel"
+                }
+            ]
+        },
+        {
+            "content_id": "5",
+            "content_title": "资产管理",
+            "content_menu": [
+                {
+                    "type_id": "16",
+                    "type_name": "库存资产",
+                    "type_type": "assets"
+                },
+                {
+                    "type_id": "17",
+                    "type_name": "固定资产",
+                    "type_type": "assets"
+                }
+            ]
+        }
+    ]
+}

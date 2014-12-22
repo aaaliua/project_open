@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <com.linju.android_property.viewutils.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E5E5E5"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dip"
+                android:layout_marginTop="12dip"
+                android:clickable="true"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_img" />
+
+                <com.linju.android_property.viewutils.CircleImageView
+                    android:id="@+id/user_img"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_toLeftOf="@+id/row_img"
+                    android:src="@drawable/hugh"
+                    app:border_color="#000000"
+                    app:border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/row_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="12dip"
+                android:clickable="true"
+                android:background="@drawable/list_selected"
+                >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_community" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:id="@+id/comuntiyName"
+                    android:layout_toLeftOf="@+id/row_img1"
+                    android:text="莫莫小区" />
+
+                <ImageView
+                    android:id="@+id/row_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:clickable="true"
+                android:background="@drawable/list_selected"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                 >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_name_nozero" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:id="@+id/username"
+                    android:layout_toLeftOf="@+id/row_img2"
+                    android:text="1259548@163.com" />
+
+                <ImageView
+                    android:id="@+id/row_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+               android:clickable="true"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_position_nozero" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:id="@+id/position"
+                    android:layout_toLeftOf="@+id/row_img3"
+                    android:text="管理员" />
+
+                <ImageView
+                    android:id="@+id/row_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_phone" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:id="@+id/phone"
+                    android:layout_toLeftOf="@+id/row_img4"
+                    android:text="15800702251" />
+
+                <ImageView
+                    android:id="@+id/row_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_validate_manager" />
+
+                <ImageView
+                    android:id="@+id/row_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+               android:clickable="true"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_system_post" />
+
+                <ImageView
+                    android:id="@+id/row_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="16dip"
+                android:background="@drawable/list_selected" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/user_setting" />
+
+                <ImageView
+                    android:id="@+id/row_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.linju.android_property.viewutils.BounceScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recommend_item"
+    android:background="@drawable/tm_button_white_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/placehold_thumb_width"
+            android:layout_height="@dimen/placehold_thumb_height"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:layout_marginLeft="12dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder_thumb"
+             />
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img"
+            android:singleLine="true"
+            android:textSize="@dimen/video_list_title"
+            dazhong:fontVariation="light"
+            android:textStyle="bold" />
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:textColor="@color/videoListItemContentColor"
+            dazhong:fontVariation="light"
+            android:textSize="@dimen/video_list_content" />
+        <com.linju.android_property.viewutils.WPTextView 
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/desc"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            dazhong:fontVariation="light"
+            android:textColor="@color/videoListItemContentColor"
+            android:textSize="@dimen/video_list_content" 
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/seprate_line"
+        android:background="@color/divide_line" />
+
+</LinearLayout>

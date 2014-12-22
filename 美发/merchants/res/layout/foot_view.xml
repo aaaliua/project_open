@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingBottom="8dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:enabled="false"
+        android:visibility="visible" >
+
+        <com.dazhongcun.widget.CustomView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            dazhong:mcolor="#fe5d7c"
+            dazhong:mdimes="4" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/progress"
+        android:id="@+id/pull_to_refresh_loadmore_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:text="@string/load"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

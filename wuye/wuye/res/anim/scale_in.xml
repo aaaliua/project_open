@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true" >
+
+    <scale
+        android:duration="360"
+        android:fillAfter="false"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:repeatCount="0"
+        android:startOffset="280"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+    <!-- 
+     <scale
+        android:duration="700"
+        android:fillAfter="true"
+        android:fromXScale="1.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="100%"
+        android:pivotY="0%"
+        android:repeatCount="0"
+        android:startOffset="360"
+        android:toYScale="1.0"
+        android:toXScale="0.1"
+         /> -->
+    <!--
+        fromXScale[float]:为动画起始时，X坐标上的伸缩尺寸,0.0表示收缩到没有
+        fromYScale[float]:为动画起始时，Y坐标上的伸缩尺寸,0.0表示收缩到没有
+				1.0表示正常无伸缩
+				值小于1.0表示收缩
+				值大于1.0表示放大
+	toXScale[float]:为动画结束时，X坐标上的伸缩尺寸
+	toYScale[float]:为动画结束时，X坐标上的伸缩尺寸
+	pivotX[float]:为动画相对于物件的X坐标的开始位置
+	pivotY[float]:为动画相对于物件的X、Y坐标的开始位置	
+			50,50%，50%p。这三种写法就分别代表了ABSOLUTE，RELATIVE_TO_SELF和RELATIVE_TO_PARENT。 
+			属性值说明：从0%-100%中取值，50%为物件的X或Y方向坐标上的中点位置
+	fillAfter[boolean]:当设置为true ，该动画转化在动画结束后被应用
+	startOffset[long]:动画之间的时间间隔，从上次动画停多少时间开始执行下个动画
+	repeatCount[int]:动画的重复次数
+    -->
+
+</set>

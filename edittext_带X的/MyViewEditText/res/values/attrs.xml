@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EditTextWithClearBtn">
+        <attr name="textLeft" format="string" />
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="text_size" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>

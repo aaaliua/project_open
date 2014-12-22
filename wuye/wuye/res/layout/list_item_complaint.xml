@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:id="@+id/recommend_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flat_selector_list"
+    android:paddingBottom="4dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/contentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dip"
+            android:orientation="horizontal" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/post_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="4dip"
+                android:layout_weight="8.5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/video_list_title"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/rect_blue_pressed_list"
+                android:padding="2dp"
+                android:layout_marginBottom="4dip"
+                android:text="未回复"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ten" />
+        </LinearLayout>
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contentTitle"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="1dp"
+            android:maxLines="1"
+            android:textColor="@color/videoListItemContentColor"
+            android:textSize="@dimen/text_size_small"
+            dazhong:fontVariation="light" />
+
+        <TextView
+            android:id="@+id/lines"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/line" />
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lines"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dip"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:textSize="@dimen/video_list_content"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <!--
+         <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/seprate_line"
+        android:background="@color/divide_line" />
+    -->
+
+</LinearLayout>

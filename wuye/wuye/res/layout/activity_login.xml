@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/blue_pressed"
+    android:fillViewport="true"
+    android:gravity="center" >
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:baselineAligned="false">
+    
+         <com.linju.android_property.viewutils.WPLinearLayoutSizeBound
+            dazhong:maxWidth="@dimen/nux_width"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:baselineAligned="true"
+            android:layout_gravity="center_horizontal|bottom">
+            
+            <ImageView
+            android:layout_width="108dip"
+            android:layout_height="108dip"
+            android:layout_marginBottom="8dip"
+            android:src="@drawable/welcome_logo" />
+             
+         </com.linju.android_property.viewutils.WPLinearLayoutSizeBound>
+         
+         
+    <com.linju.android_property.viewutils.WPLinearLayoutSizeBound
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        dazhong:maxWidth="500dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <com.linju.android_property.viewutils.WPAutoCompleteTextView
+                android:id="@+id/username"
+                style="@style/NUXEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="38dp"
+                android:hint="@string/login_username"
+                android:completionThreshold="1"
+                android:inputType="textEmailAddress"
+                android:text="661669@163.com"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dashicon_admin_users"
+                android:tint="@color/grey_medium"
+                
+                 />
+            
+            <ImageView
+                android:id="@+id/closeuser"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/close_pushbanner"
+                android:visibility="gone"
+                android:tint="@color/nux_eye_icon_color_closed" />
+        </RelativeLayout>
+
+        <!-- <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dip"
+            android:background="#90909090" /> -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <com.linju.android_property.viewutils.OpenSansEditText
+                android:id="@+id/password"
+                style="@style/NUXEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="38dp"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:text="123456"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dashicon_lock"
+                android:tint="@color/grey_medium" />
+
+            <ImageView
+                android:id="@+id/password_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/dashicon_eye_closed"
+                android:tint="@color/nux_eye_icon_color_closed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/nux_button_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/sign_in_button"
+                style="@style/NUXPrimaryButton"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/sign_in" />
+
+            <RelativeLayout
+                android:id="@+id/sign_in_progress_bar"
+                style="@style/NUXPrimaryButton"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:visibility="gone" >
+
+                <com.linju.android_property.viewutils.CustomView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    dazhong:mcolor="#ffffff"
+                	dazhong:mdimes="8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+         <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/hints"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:text="@string/default_login_hint" />
+    </com.linju.android_property.viewutils.WPLinearLayoutSizeBound>
+</LinearLayout>
+</ScrollView>

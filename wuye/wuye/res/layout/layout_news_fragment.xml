@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/action_bar_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_in"
+                style="@style/news_btn_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_btn_selector"
+                android:text="@string/inbox" />
+
+            <Button
+                android:id="@+id/btn_send"
+                style="@style/news_btn_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_btn_selector"
+                android:text="@string/sendbox" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_write_msg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_write_news_whilte" />
+    </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/news_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+
+</LinearLayout>

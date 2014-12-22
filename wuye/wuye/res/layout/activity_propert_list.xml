@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <include
+        layout="@layout/app_loading_view"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/filter"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/query"
+        android:checkedButton="@+id/btn1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2.4" >
+
+        <RadioButton
+            android:id="@+id/btn1"
+            style="@style/RadioStyle"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/radio_height"
+            android:layout_weight="1"
+            android:background="@drawable/property_left_radio"
+            android:text="@string/unfinish" />
+
+        <RadioButton
+            android:id="@+id/btn4"
+            style="@style/RadioStyle"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/radio_height"
+            android:layout_weight="1"
+            android:background="@drawable/property_right_radio"
+            android:text="@string/cancelled" />
+    </RadioGroup>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dip"
+        android:divider="@null"
+        android:dividerHeight="14dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        app:max_velocity="0"
+        app:ptrOverScroll="false"
+        app:ptrAnimationStyle="flip"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="true" />  <!--  -->
+
+    <include
+        layout="@layout/empty_inbox"
+        android:visibility="gone" />
+
+</LinearLayout>

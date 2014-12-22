@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   
+	 <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner_loading</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+</resources>

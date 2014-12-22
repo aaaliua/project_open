@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:background="#00BCD4" >
+
+        <at.markushi.ui.ActionView
+            android:id="@+id/action"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:background="@drawable/bg_selector_noradius"
+            android:clickable="true"
+            android:padding="16dip"
+            app:av_action="drawer"
+            app:av_color="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:layout_toLeftOf="@+id/overflow"
+            android:background="@drawable/bg_selector_noradius"
+            android:clickable="true"
+            android:padding="12dip"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="56dip"
+            android:layout_height="56dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_selector_noradius"
+            android:clickable="true"
+            android:padding="12dip"
+            android:src="@drawable/ic_action_overflow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action"
+            android:layout_marginLeft="72dip"
+            android:text="任务管理"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</LinearLayout>

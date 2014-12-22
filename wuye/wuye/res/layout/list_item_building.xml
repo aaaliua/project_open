@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:id="@+id/recommend_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flat_selector_list"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_number_two"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/building_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2号楼"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_type"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="有电梯"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_count"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="45"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dip"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/desc"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contentTitle"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textSize="@dimen/text_size_small"
+            dazhong:fontVariation="light" />
+        
+         <ImageView
+                    android:id="@+id/row_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginBottom="8dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+    </LinearLayout>
+
+</LinearLayout>

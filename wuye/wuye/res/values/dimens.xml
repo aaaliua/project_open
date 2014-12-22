@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="height_top_bar">48dip</dimen>
+    <dimen name="image_h_w">60dip</dimen>
+    <dimen name="image_corners">11dip</dimen>    <!-- 图片圆角弧度 -->
+    <dimen name="image_corners_zero">0dip</dimen>    <!-- 图片圆角弧度 -->
+    <dimen name="viewpager_btn_top">6dip</dimen>    <!-- 图片圆角弧度 -->
+    <dimen name="tabhost_margin_height">54dip</dimen>    <!-- 图片圆角弧度 -->
+    <dimen name="tabhost_margin_height_1">57dip</dimen>    <!-- 图片圆角弧度 -->
+    
+    <!-- <dimen name="tab_padding_LR">12dip</dimen> -->
+    <dimen name="tab_margin_top">0.5dp</dimen>
+    <dimen name="text_margin_left">12dip</dimen>
+    <dimen name="text_margin_left_property">36dip</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_top">4dip</dimen>
+    <dimen name="title_height">48dip</dimen>
+    <dimen name="radio_height">40dip</dimen>
+
+    <dimen name="corner_radius">0dp</dimen>
+    <dimen name="corner_radius_list">4dp</dimen>
+    <dimen name="layer_padding">0dp</dimen>
+    <dimen name="nux_title_font_size">28sp</dimen>
+    <dimen name="nux_button_height">50dp</dimen>
+    <dimen name="nux_width">600dp</dimen>
+    
+    <dimen name="text_size_ten">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_mlarger">20sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    
+    
+    <dimen name="padding_search_bar">5dp</dimen>
+    <!--listItem  -->
+     <dimen name="placehold_thumb_width">65dp</dimen>
+    <dimen name="placehold_thumb_height">65dp</dimen>
+    <dimen name="video_list_content">13sp</dimen>
+    <dimen name="video_list_title">16sp</dimen>
+    <dimen name="seprate_line">1px</dimen>
+    <dimen name="drawer_width">245dp</dimen>
+</resources>

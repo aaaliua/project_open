@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:id="@+id/recommend_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_normal_list"
+    android:orientation="vertical" >    <!-- android:background="@drawable/flat_selector_list" -->
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/money_date"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/money"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/money_type"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

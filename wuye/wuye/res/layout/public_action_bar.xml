@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_bar"
+    android:background="@color/action_bar_color"
+    android:id="@+id/action_bar"
+    android:gravity="center_vertical" 
+    android:animateLayoutChanges="true"
+    >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="8dip"
+        android:background="@color/action_bar_color"
+        android:clickable="true"
+        android:drawableLeft="@drawable/back_seletor"
+        android:text="@string/back"
+        android:textColor="@drawable/text_blue"
+        android:textSize="@dimen/text_size_sixteen" />
+
+    <com.linju.android_property.viewutils.WPTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/edit_or_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:paddingRight="8dip"
+        android:background="@color/action_bar_color"
+        android:textColor="@drawable/text_select"
+        android:textSize="@dimen/text_size_sixteen" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="@dimen/actionbar_img_dim"
+        android:layout_height="@dimen/actionbar_img_dim"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dip"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/info" />
+
+</RelativeLayout>

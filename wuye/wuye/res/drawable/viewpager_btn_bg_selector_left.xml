@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角的BG  点击焦点 背景50%透明度   如不需要圆角请设置radius为0-->
+
+
+    <!-- pressed -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <gradient android:angle="270" android:endColor="@color/viewpager_top_btn_press" android:startColor="@color/viewpager_top_btn_press" />
+
+            <corners android:topLeftRadius="@dimen/viewpager_btn_top" android:bottomLeftRadius="@dimen/viewpager_btn_top"/>
+        </shape></item>
+
+    <!-- focus -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/viewpager_top_btn_press" android:startColor="@color/viewpager_top_btn_press" />
+
+            <corners android:topLeftRadius="@dimen/viewpager_btn_top" android:bottomLeftRadius="@dimen/viewpager_btn_top" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/viewpager_top_btn" />
+			<stroke android:width="1dp" android:color="#20000000" />
+            <corners android:topLeftRadius="@dimen/viewpager_btn_top" android:bottomLeftRadius="@dimen/viewpager_btn_top" />
+        </shape></item>
+    <!--
+           android:bottomLeftRadius="4dip" 
+                android:bottomRightRadius="4dip" 
+                android:topLeftRadius="4dip" 
+                android:topRightRadius="4dip"
+    -->
+
+</selector>

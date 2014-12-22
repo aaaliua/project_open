@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:minHeight="60dp"
+    android:minWidth="180dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+     <com.linju.android_property.viewutils.CustomView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                dazhong:mangel="2000"
+                dazhong:mcolor="#000000"
+                dazhong:mdimes="4"
+                dazhong:msweep="700" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:layout_marginLeft="10dp"
+        android:text="@string/app_loading" />
+
+</LinearLayout>

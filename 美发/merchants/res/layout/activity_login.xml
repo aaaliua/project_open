@@ -1,0 +1,256 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:dazhong="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#e8e8e8"
+    android:layout_height="match_parent" >
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#7ED9DA" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#EFE8CB" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/sample_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+<!--         <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+         android:background="@android:color/transparent"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+         app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:minHeight="?attr/actionBarSize"/> -->
+        
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美美约"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/merchants_color"
+            android:textSize="28sp"
+            android:layout_marginBottom="8dip"
+            android:textStyle="bold"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的门店管理专家"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/merchants_color"
+            android:textSize="14sp"
+            android:layout_marginBottom="72dip"
+            android:textStyle="normal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="14dip"
+            android:orientation="vertical" >
+
+            
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:background="@android:color/white" >
+
+                <com.dazhongcun.widget.OpenSansEditText
+                    android:id="@+id/username"
+                    style="@style/NUXEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="账号"
+                    android:cursorVisible="true"
+                    android:maxLength="30"
+                    android:inputType="textEmailAddress"
+                    android:text="15618963327" />   <!-- 15618963327   123123qwe-->
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dashicon_admin_users_phone"
+                    android:tint="@color/grey_medium" />
+            </RelativeLayout>
+
+            
+             <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+             />
+           
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <com.dazhongcun.widget.OpenSansEditText
+                    android:id="@+id/password"
+                    style="@style/NUXEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:cursorVisible="true"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    android:text="123123qwe" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dashicon_lock_2"
+                    android:tint="@color/grey_medium" />
+
+                <!-- <ImageView
+                    android:id="@+id/password_visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/dashicon_eye_closed"
+                    android:tint="@color/nux_eye_icon_color_closed" /> -->
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                
+                
+              <com.dazhongcun.views.CheckBox
+                android:id="@+id/material_checkBox"
+                 android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/merchants_color"
+                materialdesign:check="true" 
+                materialdesign:checktext="@string/auto_sign_in"
+                />
+                
+                <!-- <CheckBox
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="8dip"
+                android:layout_marginRight="4dip"
+                android:enabled="true"
+                android:gravity="center"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp"
+                android:text="自动登陆" /> -->
+                
+             <com.dazhongcun.widget.WPTextView
+                android:id="@+id/resetPassword"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="8dip"
+                android:layout_marginRight="4dip"
+                android:enabled="true"
+                android:gravity="center"
+                android:textColor="@color/login_hint"
+                android:textSize="12sp"
+                android:text="@string/reset_password" />
+             
+             </RelativeLayout>
+        </LinearLayout>
+
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/nux_button_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/sign_in_button"
+                style="@style/NUXPrimaryButton"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:background="@drawable/flat_selector_red"
+                android:text="@string/sign_in" />
+
+            
+            <RelativeLayout
+                android:id="@+id/sign_in_progress_bar"
+                style="@style/NUXPrimaryButton"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:visibility="gone" >
+
+                <com.dazhongcun.widget.CustomView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    dazhong:mcolor="#ffffff"
+                	dazhong:mdimes="8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+          <com.dazhongcun.widget.WPTextView
+                android:id="@+id/hints"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:textColor="@color/merchants_color"
+                android:visibility="gone"
+                android:text="@string/default_login_hint" />
+     
+    </LinearLayout>
+
+</FrameLayout>

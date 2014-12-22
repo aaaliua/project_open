@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <com.example.guideactivitydemo.MyHorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout 
+                         android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    
+                    >
+                  <ImageView 
+                          android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+               
+                     android:src="@drawable/build1"
+                     android:layout_gravity="bottom"
+                     
+                      />  
+                    
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                     android:src="@drawable/build2"
+                     />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background" 
+                     android:src="@drawable/build3"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                     android:src="@drawable/build4"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/street" />
+        </LinearLayout>
+    </com.example.guideactivitydemo.MyHorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/sun_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/sun"
+        
+         />
+    
+    <ImageView
+        android:id="@+id/text_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:src="@drawable/leading_text_1"
+        android:visibility="gone"
+         />
+     <ImageView
+        android:id="@+id/man_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dip"
+        android:src="@drawable/boy01" />
+
+</RelativeLayout>

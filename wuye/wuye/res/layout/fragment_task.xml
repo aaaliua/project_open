@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <include layout="@layout/public_action_bar"/>
+    <include layout="@layout/task_item"/>
+    <include layout="@layout/task_item"/>
+    <include layout="@layout/task_item"/>
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/home_list_item_back"
+    android:paddingBottom="4dip"
+    android:orientation="vertical" >
+
+    <com.linju.android_property.viewutils.WPTextView
+        android:id="@+id/ba_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_label"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:text="保安保部"
+         />
+    
+    <com.linju.android_property.viewutils.WPTextView
+        android:id="@+id/donet"
+        android:layout_below="@+id/ba_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:minEms="6"
+        android:text="未完成任务"
+        android:textSize="@dimen/text_size_micro"
+        />
+    <com.linju.android_property.viewutils.WPTextView
+        android:id="@+id/done"
+        android:layout_below="@+id/donet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:minEms="6"
+        android:text="已完成任务"
+        android:textSize="@dimen/text_size_micro"
+        />
+    
+    
+
+</RelativeLayout>
+</LinearLayout>

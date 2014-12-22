@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lingjuwuye</string>
+    <string name="app_name0">lingjuwuye</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="create_account_wpcom">Create an account on&#160;WordPress.com</string>
+	<string name="sign_in">Sign in</string>
+	<string name="login_username">Username</string>
+	<string name="login_password">password</string>
+	
+	<string name="message_fragment_title">Message</string>
+	<string name="community_fragment_title">Community</string>
+	<string name="task_fragment_title">Task</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- 首个字母为图片的随机颜色 -->
+	 <string-array name="colors" translatable="false">
+        <item>#99cc00</item>
+		<item>#33b5e5</item>
+        <item>#0099cc</item>
+		<item>#547bca</item>
+		<item>#aa66cc</item>
+        <item>#9933cc</item>
+        <item>#669900</item>
+		<item>#aeb857</item>
+        <item>#cc0000</item>
+		<item>#df5948</item>
+		<item>#ff4444</item>
+		<item>#ae6b23</item>
+		<item>#ff8800</item>
+		<item>#e5ae4f</item>
+		<item>#ffbb33</item>
+        <item>#cccccc</item>
+        <item>#888888</item>
+    </string-array>
+</resources>

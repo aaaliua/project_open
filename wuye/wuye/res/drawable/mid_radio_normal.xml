@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- <item android:drawable="@drawable/top_btn_press" /> -->
+ 
+  <item android:bottom="@dimen/layer_padding">
+      <shape android:shape="rectangle">
+            <solid android:color="@color/blue_normal" />
+            <!-- <stroke android:width="1px" android:color="#20000000" /> -->
+        </shape>
+  </item>
+</layer-list>

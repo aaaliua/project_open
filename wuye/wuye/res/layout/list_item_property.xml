@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:id="@+id/recommend_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flat_selector_list"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_number_two"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/building_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2号楼"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_menpai"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="1100"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_name"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="赵富富"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/contentchild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/user_phone"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="13867932844"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_property_money"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/property_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="650"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lou_car_money"
+                android:textColor="@color/software_textColor_unselected"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="normal" />
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/car_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="300"
+                android:textSize="@dimen/text_size_sixteen"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

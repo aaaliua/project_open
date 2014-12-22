@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="84dip"
+    android:paddingBottom="84dip"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/yezhu_louyu"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="0dip"
+            android:paddingTop="0dip" >
+
+            <LinearLayout
+                android:id="@+id/titlelayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lou_add"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <include
+                    layout="@layout/loading_item"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrl"
+                android:layout_below="@+id/titlelayout"
+                android:layout_width="match_parent"
+                android:paddingBottom="48dip"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dip"
+                            android:text="@string/lou_number"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/post"
+                            android:background="@drawable/theme_material_textfield_activated_holo_light"
+                            android:hint="@string/post_edit_number_hint"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textColor="#202020"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/count_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/post1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dip"
+                            android:text="@string/lou_count"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/building_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/post1"
+                            android:background="@drawable/theme_material_textfield_activated_holo_light"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textColor="#202020"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dip"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@null"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/post2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dip"
+                            android:text="@string/lou_type"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <!--
+                     <EditText
+                    android:id="@+id/subtitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/post2"
+                    android:background="@null"
+                    android:hint="@string/post_edit_title_hint"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />                        -->
+
+                        <EditText
+                            android:id="@+id/building_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/post2"
+                            android:background="@drawable/theme_material_textfield_activated_holo_light"
+                            android:hint="@string/post_edit_title_hint"
+                            android:padding="8dp"
+                            android:singleLine="false"
+                            android:textColor="@color/action_bar_color"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/post2"
+                            android:animationCache="true"
+                            android:background="@drawable/spinner_selector"
+                            android:drawSelectorOnTop="true"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/post3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dip"
+                            android:gravity="center_vertical"
+                            android:text="@string/lou_desc"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/building_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/post3"
+                            android:background="@drawable/theme_material_textfield_activated_holo_light"
+                            android:hint="@string/post_edit_desc_hint"
+                            android:padding="8dp"
+                            android:singleLine="false"
+                            android:textColor="#202020"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                    
+                    
+                     <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dip"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:gravity="center_vertical" />
+                        
+                </LinearLayout>
+            </ScrollView>
+            <!--
+      <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/transalt_"
+            android:layout_marginTop="10dp" />            -->
+
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/flot_butcancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/flat_selector_red"
+                    android:enabled="true"
+                    android:text="取消"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/flot_but"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/flat_selector"
+                    android:enabled="true"
+                    android:text="提交"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>            -->
+
+            <LinearLayout
+                android:id="@+id/bottombut"
+                android:layout_width="match_parent"
+                android:layout_alignBottom="@+id/scrl"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/flot_butcancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="0.5dp"
+                    android:layout_height="43dp" />
+
+                <Button
+                    android:id="@+id/flot_but"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/action_bar_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/app_loading_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

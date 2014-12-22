@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/blue_normal"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/text_size_sixteen" />
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/info_title"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue_normal"
+            android:text="@string/edit_info_title"
+            android:textColor="@drawable/text_select"
+            android:textSize="@dimen/text_size_sixteen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/activtiy_loginusername"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minEms="3"
+                android:layout_marginLeft="10dip"
+                android:text="@string/login_username"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_loginusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activtiy_username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/user_name"
+                android:textColor="#000"
+                android:minEms="3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activtiy_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/user_tel"
+                android:textColor="#000"
+                android:minEms="3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activtiy_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/user_email"
+                android:textColor="#000"
+                android:minEms="3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activtiy_position"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/user_position"
+                android:textColor="#000"
+                android:minEms="3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activtiy_position"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/tm_button_white_bg"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/mtv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/user_address"
+                android:textColor="#000"
+                android:minEms="3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/subject_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/mtv_02"
+                android:background="@null"
+                android:maxLength="20"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        
+        <Button
+                android:id="@+id/flot_but"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:layout_margin="4dip"
+                android:background="@drawable/flat_selector_red"
+                android:text="@string/logout"
+                android:textColor="@android:color/white" />
+        
+    </LinearLayout>
+
+   
+</LinearLayout>

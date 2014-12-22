@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- 小区管理的fragment -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/blue_normal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/community_fragment_title"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/to_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/info_title"
+            android:background="@color/blue_normal"
+            android:textColor="@drawable/text_select"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/headgridview"
+        android:background="@drawable/common_card_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"  
+        android:verticalSpacing="3dip" 
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        >
+    </com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView>
+
+</LinearLayout>

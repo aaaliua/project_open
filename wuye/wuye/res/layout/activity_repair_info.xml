@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linju.android_property.viewutils.WPLinearLayoutSizeBound xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res/com.linju.android_property2"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#F2F2F2"
+        android:scrollbars="none" >
+
+        <com.linju.android_property.viewutils.WPLinearLayoutSizeBound
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:animateLayoutChanges="true"
+            android:background="#F2F2F2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_title"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/titles"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint"
+                    android:maxLength="36"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_type"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/type"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint2"
+                    android:maxLength="36"
+                    android:text="手机端" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_man"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/man"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint3"
+                    android:maxLength="36"
+                    android:text="吴先生" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_address"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/address"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint4"
+                    android:maxLength="36"
+                    android:text="25栋103室内" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_tel"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/tel"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint5"
+                    android:maxLength="36"
+                    android:text="15800702251" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_date"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/date"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint6"
+                    android:maxLength="36"
+                    android:text="2014-08-01 14:37" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_info"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+            </RelativeLayout>
+
+            <com.linju.android_property.viewutils.WPTextView
+                android:id="@+id/repairInfo"
+                style="@style/RepairTextNoCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info"
+                android:layout_marginLeft="48dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="8dip"
+                android:text="" />
+
+            <com.linju.android_property.viewutils.NoScorllGridView
+                android:id="@+id/Photogridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="8dip"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="1dip"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="2dip" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/info8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_status"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/status"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/info8"
+                    android:maxLength="36"
+                    android:text="待处理"
+                    android:textColor="#47C2FC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/info3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_process"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <Spinner
+                    android:id="@+id/repair_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_toRightOf="@id/info3"
+                    android:animationCache="true"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/info5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_responsible"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <Spinner
+                    android:id="@+id/repair_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_toRightOf="@id/info5"
+                    android:animationCache="true"
+                    android:background="@drawable/spinner_selector"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/flat_selector"
+                    android:clickable="true"
+                    android:padding="4dip"
+                    android:text="任务分配"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="2dip"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/hint8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:hint="@string/repair_evaluation"
+                    android:textSize="@dimen/text_size_sixteen"
+                    dazhong:fontVariation="light" />
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/evaluation"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/hint8"
+                    android:hint="好评"
+                    android:maxLength="36" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/evainfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <com.linju.android_property.viewutils.WPTextView
+                        android:id="@+id/hint9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:hint="@string/repair_evaluation_info"
+                        android:textSize="@dimen/text_size_sixteen"
+                        dazhong:fontVariation="light" />
+                </RelativeLayout>
+
+                <com.linju.android_property.viewutils.WPTextView
+                    android:id="@+id/evaluation_info"
+                    style="@style/RepairText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/evainfo"
+                    android:hint="无"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+            </RelativeLayout>
+        </com.linju.android_property.viewutils.WPLinearLayoutSizeBound>
+    </ScrollView>
+
+</com.linju.android_property.viewutils.WPLinearLayoutSizeBound>

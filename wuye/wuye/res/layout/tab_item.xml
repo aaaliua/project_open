@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabbg"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="1dip"
+         />
+
+     <com.linju.android_property.viewutils.TabItem
+        android:id="@+id/tab_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/text_size_micro"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@drawable/software_textcolor" /> 
+    
+    <!-- <com.linju.android_property.viewutils.TabItem
+        android:id="@+id/tab_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableTop="@android:drawable/ic_menu_help"
+        android:paddingTop="15dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/text_size_micro"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@color/white" /> -->
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- <item android:drawable="@drawable/top_btn_press" /> -->
+ 
+  <item android:bottom="@dimen/layer_padding">
+      <shape android:shape="rectangle">
+            <solid android:color="@color/trans" />
+			<stroke android:width="2px" android:color="@color/action_bar_color" />
+            <corners android:topRightRadius="@dimen/viewpager_btn_top" android:bottomRightRadius="@dimen/viewpager_btn_top" />
+        </shape>
+  </item>
+</layer-list>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dazhong="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="48dip"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:text="小区公告"
+            android:textSize="@dimen/video_list_title"
+            android:textStyle="normal" />
+
+        <com.linju.android_property.viewutils.WPTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:text="asdfadsfadf"
+            android:textColor="@color/videoListItemContentColor"
+            android:textSize="@dimen/text_size_small"
+            dazhong:fontVariation="light" />
+
+        <TextView
+            android:id="@+id/lines"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/line" />
+        
+        
+        <WebView 
+            android:id="@+id/Post_content"
+            android:layout_marginTop="8dip"
+            android:layout_below="@+id/lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

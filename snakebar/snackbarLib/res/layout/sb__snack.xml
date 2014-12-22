@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/snackContainer"
+    style="@style/SnackBar.Container">
+
+    <TextView
+        android:id="@id/snackMessage"
+        style="@style/SnackBar.Message"
+        tools:text="Sample message"/>
+
+    <Button
+        android:id="@id/snackButton"
+        style="@style/SnackBar.Button"
+        tools:text="Action"
+        android:focusable="false" />
+
+</LinearLayout>

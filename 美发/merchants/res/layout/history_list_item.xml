@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.dazhongcun.widget.FancyButton
+            android:id="@+id/makeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dip"
+            android:layout_marginRight="68dip"
+            android:layout_marginTop="10dip"
+            android:clickable="false"
+            android:padding="2dip"
+            android:paddingLeft="48dip"
+            android:paddingRight="48dip"
+            fancy:borderColor="#FFFFFF"
+            fancy:borderWidth="0dp"
+            fancy:defaultColor="#E6E6E6"
+            fancy:focusColor="#E6E6E6"
+            fancy:radius="20dp"
+            fancy:text="Create an account"
+            fancy:textColor="#656A74" />
+
+        <!--
+             <TextView
+            android:id="@+id/makeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="#aaaaaa"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:textColor="#c3c3c3"
+            android:textSize="@dimen/text_size_micro" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeManHint"
+                style="@style/leftLayout"
+                android:text="预约人:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeMan"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5F646E"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeTypeHint"
+                style="@style/leftLayout"
+                android:text="预约类型:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeType"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makePhoneHint"
+                style="@style/leftLayout"
+                android:text="电话号码:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makePhone"
+                style="@style/rightLayout"
+                android:autoLink="email|phone"
+                android:textColor="@color/merchants_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeNameHint"
+                style="@style/leftLayout"
+                android:text="预约造型师:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeName"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeTimeHint"
+                style="@style/leftLayout"
+                android:text="预约时间:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeTime"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makedateHint"
+                style="@style/leftLayout"
+                android:text="预约日期:"
+                android:textColor="#9B9EA2"
+                app:fontVariation="light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="left" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makedate"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontVariation="light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/makeCreateDate"
+                style="@style/rightLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                app:fontVariation="light" />
+        </RelativeLayout>
+        
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5" 
+            android:paddingRight="12dip"
+            android:gravity="center_vertical|right"
+            >
+             <com.dazhongcun.widget.FancyButton
+                 android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:paddingLeft="14dip"
+            android:paddingRight="14dip"
+            fancy:borderColor="#9B9EA2"
+            fancy:borderWidth="0dp"
+            fancy:defaultColor="@color/white"
+            fancy:focusColor="#E6E6E6"
+            fancy:radius="24dp"
+            fancy:textColor="#9B9EA2" />
+             
+             <com.dazhongcun.widget.FancyButton
+                 android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:layout_marginLeft="4dip"
+            fancy:borderColor="#FFFFFF"
+            fancy:borderWidth="0dp"
+            fancy:defaultColor="?colorPrimary"
+           
+            fancy:focusColor="#E6E6E6"
+            fancy:radius="24dp"
+            fancy:text="设置提醒"
+            fancy:textColor="@color/white" />  <!--  fancy:iconPosition="left"
+            fancy:iconResource="@drawable/remind" -->
+            
+           </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="crash_notif_ticker_text">程序崩溃</string>
+    <string name="crash_notif_title">检测到应用程序发生过崩溃</string>
+    <string name="crash_notif_text">请点击这里，以帮助我们做的更好.</string>
+    <string name="crash_dialog_title">检测到应用程序发生过崩溃</string>
+    <string name="crash_dialog_text">发生意外的错误迫使应用程序曾经停止。\n请帮助我们向我们发送错误数据以修正这个问题.
+        \n你所要做的就是点击确定</string>
+    <string name="crash_dialog_comment_prompt">您可以添加您的宝贵意见在下面:</string>
+    <string name="crash_dialog_ok_toast">谢谢!</string>
+    
+    
+    <string name="app_name">物业版</string>
+    <string name="app_name0">lingjuwuye</string>
+    <string name="create_account_wpcom">在WordPress.com上创建一个账号</string>
+    <string name="back">返回</string>
+    <string name="app_loading">正在加载数据...</string>
+    <string name="app_loading_fail">加载异常...</string>
+    <string name="app_select_camera">拍照</string>
+    <string name="app_select_phonePhoto">从手机相册选择</string>
+    <string name="cancel">取消</string>
+    <string name="count">(%1$s)</string>
+    <string name="selectImage">选择相册</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_account_hint">请输入用户名</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_password_hint">请输入用户密码</string>
+    <string name="login_error_hint">请求登陆失败</string>
+    <string name="default_login_hint">正在登陆大众村物业</string>
+    <string name="get_role_error">获取权限列表失败</string>
+    <string name="app_add">添加</string>
+    <string name="app_done">确定</string>
+    <!-- 用户信息 -->
+    <string name="user_name">姓&#160;&#160;&#160;&#160;名</string>
+    <string name="user_tel">电&#160;&#160;&#160;&#160;话</string>
+    <string name="user_email">邮&#160;&#160;&#160;&#160;箱</string>
+    <string name="user_position">职&#160;&#160;&#160;&#160;位</string>
+    <string name="user_address">小&#160;&#160;&#160;&#160;区</string>
+    <string name="logout">退出登录</string>
+    <string name="message_fragment_title">消息管理</string>
+    <string name="community_fragment_title">小区管理</string>
+    <string name="task_fragment_title">任务管理</string>
+    <string name="info_title">个人中心</string>
+    <string name="edit_info_title">修改</string>
+    <string name="delete">删除</string>
+    
+    <string name="user_setting">设置</string>
+    <string name="user_img">头像</string>
+    <string name="user_community">小区名称</string>
+    <string name="user_name_nozero">用户名</string>
+    <string name="user_position_nozero">职位</string>
+    <string name="user_phone">手机号码</string>
+    <string name="user_validate_manager">申请认证管理</string>
+    <string name="user_system_post">系统公告</string>
+    
+    <string name="reset_password">修改密码</string>
+    <string name="touch_event">设置手势</string>
+    <string name="update_app">检查更新</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="feedback">意见反馈</string>
+    <string name="service_center">服务中心</string>
+    <string name="about">关于我们</string>
+    
+    <!--楼宇  -->
+	<string name="lou_add">楼宇添加</string>
+	<string name="lou_edit">楼宇修改</string>
+	<string name="lou_info">楼宇详细</string>
+	<string name="lou_number">楼房号码</string>
+	<string name="lou_number_two">楼号</string>
+	<string name="lou_type">房屋类型</string>
+	<string name="lou_count">房屋数量</string>
+	<string name="lou_desc">房屋描述</string>
+	<string name="lou_menpai">门牌号</string>
+	<string name="lou_menpaima">门牌号码</string>
+	<string name="lou_name">业主姓名</string>
+	<string name="lou_property_money">物业费</string>
+	<string name="lou_car_money">停车费</string>
+	<string name="lou_car_property">车位号</string>
+	<string name="lou_car_number">车牌号</string>
+	<string name="lou_tel">联系电话</string>
+	<string name="lou_wuye_info_title">物业费信息</string>
+	<string name="lou_property_history">历史记录</string>
+	
+	
+	<!-- 缴费 -->
+	<string name="money_date">缴费日期</string>
+	<string name="money">费用</string>
+	<string name="money_type">费用类型</string>
+	
+	
+	<string name="post_edit_number_hint">请输入楼房号码</string>
+	<string name="post_edit_desc_hint">请输入房屋描述</string>
+    <!-- 信息管理 -->
+    <string name="add">新增</string>
+    <string name="edit_mail">写信</string>
+    <string name="inbox">收件箱</string>
+    <string name="sendbox">发件箱</string>
+    <string name="inbox_null_hint">还没有任何人给你发过消息..</string>
+    <string name="send_box_null_hint">你还没发给任何人信息..</string>
+    <!-- 任务管理 -->
+    <string name="task_title">任务</string>
+    <!-- 客服管理 -->
+    <string name="kefu_guanli">客服管理</string>
+    <string name="baoxiu">报修信息</string>
+    <string name="danganshi">档案管理</string>
+    <string name="tousu">小区投诉</string>
+    <string name="wuye">物业费</string>
+    <string name="gonggao">公告管理</string>
+    <string name="toupiao">投票管理</string>
+    <string name="tiezi">帖子管理</string>
+    <!-- 业主信息 -->
+    <string name="yezhu_title">业主信息</string>
+    <string name="louyu_title">楼宇信息</string>
+    <string name="fangchan_title">房产信息</string>
+    <string name="renzheng_title">认证申请</string>
+    <string name="tingchewei_title">停车位</string>
+    <!-- 人事管理 -->
+    <string name="renshi_title">人事管理</string>
+    <string name="bumen_title">部门管理</string>
+    <string name="zhiwei_title">职位管理</string>
+    <string name="yuangong_title">员工管理</string>
+    <!-- 资产管理 -->
+    <string name="zichan_title">资产管理</string>
+    <string name="guding_title">固定资产</string>
+    <string name="kucun_title">库存资产</string>
+    <!-- 服务管理 -->
+    <string name="fuwu_title">服务管理</string>
+    <string name="yuding_title">预定服务</string>
+    <string name="dingdan_title">订单管理</string>
+    <!-- 报修 -->
+    <string name="unfinish">未处理</string>
+    <string name="finish">处理中</string>
+    <string name="processing">已完成</string>
+    <string name="cancelled">已取消</string>
+
+    <!-- 维修详细 -->
+    <string name="repair_title">标&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;题:</string>
+    <string name="repair_type">类&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型:</string>
+    <string name="repair_man">报&#160;&#160;修&#160;&#160;人:</string>
+    <string name="repair_address">详细地址:</string>
+    <string name="repair_tel">联系电话:</string>
+    <string name="repair_info">详细信息:</string>
+    <string name="repair_evaluation">业主评价:</string>
+    <string name="repair_evaluation_info">评价详情:</string>
+    <string name="repair_date">日&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;期:</string>
+    <string name="repair_status">状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态:</string>
+    <string name="repair_process">处&#160;&#160;理&#160;&#160;部:</string>
+    <string name="repair_responsible">责&#160;&#160;任&#160;&#160;人:</string>
+    <string name="repair_task">维修任务</string>
+    <!-- 投诉 -->
+    <string name="complaint_title">小区投诉</string>
+    <string name="complaint_status">状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态:</string>
+    <string name="complaint_info">反馈信息:</string>
+    <string name="complaint_info_title">投诉详情</string>
+    <string name="complaint_man">投&#160;&#160;诉&#160;&#160;人:</string>
+
+    <!-- 公告 -->
+    <string name="post">发布</string>
+    <string name="post_add_title">发布公告</string>
+    <string name="post_content_title">公告详情</string>
+    <string name="post_edit_title">公告主题:</string>
+    <string name="post_edit_title_hint">请输入公告主题</string>
+    <string name="post_edit_content">公告内容:</string>
+    <string name="post_edit_content_hint">输入公告内容，200字以内</string>
+
+</resources>

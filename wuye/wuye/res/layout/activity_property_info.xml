@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:id="@+id/setting_main"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <com.linju.android_property.viewutils.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:background="#E5E5E5"
+            android:orientation="vertical" >
+
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="12dip"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_number" />
+
+				<TextView
+				    android:id="@+id/buildingNumber"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/menpaiTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_menpaima" />
+
+				<TextView
+				    android:id="@+id/menpai"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/nameTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_name" />
+
+				<TextView
+				    android:id="@+id/name"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/phoneTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_tel" />
+
+				<TextView
+				    android:id="@+id/phone"
+				    android:layout_toRightOf="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/carPropertyTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_car_property" />
+
+				<TextView
+				    android:id="@+id/carProperty"
+				    android:layout_toRightOf="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/carnumberTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_car_number" />
+
+				<TextView
+				    android:id="@+id/carnumber"
+				    android:layout_toRightOf="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/propertyMoneyTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_property_money" />
+
+				<TextView
+				    android:id="@+id/propertyMoney"
+				    android:layout_toRightOf="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="2px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    android:id="@+id/carMoneyTitle"
+                    style="@style/infotextTitleStyletwo"
+                    android:text="@string/lou_car_money" />
+
+				<TextView
+				    android:id="@+id/carMoney"
+				    android:layout_toRightOf="@+id/buildingnumberTitle"
+                    style="@style/infotextTitleStyleproperty"
+                     />
+                
+            </LinearLayout>
+
+            
+            
+        </LinearLayout>
+    </com.linju.android_property.viewutils.BounceScrollView>
+
+</LinearLayout>

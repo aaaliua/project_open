@@ -1,0 +1,188 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+      <!--设置无标题栏跟状态栏     设置默认背景-->
+    <style name="Theme.Start" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/loading</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- Edittext的风格 -->
+    <style name="NUXEditText" parent="AppTheme">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textColorHint">#AAAAAA</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        
+    </style>
+    <!-- Textview风格 -->
+    <style name="NUXTitle"  parent="AppTheme">
+	        <item name="android:layout_width">wrap_content</item>
+	        <item name="android:layout_height">wrap_content</item>
+	        <item name="android:layout_marginBottom">24dp</item>
+	        <item name="android:gravity">center_horizontal</item>
+	        <item name="android:textColor">@color/blue_pressed</item>
+	        <item name="android:textSize">@dimen/nux_title_font_size</item>
+	        <item name="android:lineSpacingExtra">-4sp</item>
+    </style>
+    <!-- 按钮风格 -->
+    <style name="NUXPrimaryButton">
+        <item name="android:textColor">@color/nux_primary_button</item>
+        <item name="android:layout_height">@dimen/nux_button_height</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/nux_primary_button_selector</item>
+    </style>
+    
+    <style name="news_prompt_text">
+        <item name="android:textColor">#c0c0c0</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="news_btn_text">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    
+    <style name="RadioStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@drawable/radio_color</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 维修信息的文本框 -->
+    <style name="RepairText">
+        <item name="android:textSize">@dimen/text_size_sixteen</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">16dip</item>  
+        <item name="android:layout_marginRight">10dip</item>  
+        <item name="android:layout_centerVertical">true</item>  
+        <item name="android:padding">2dip</item>  
+    </style>
+    <style name="RepairTextNoCenter">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">2dip</item>  
+    </style>
+     <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+    
+      <!-- progress的样式 -->
+    
+    <style name="loadin_dialog" parent="android:style/Theme.Dialog">
+         <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    
+    
+	<style name="AnimationPreview">
+		<item name="android:windowEnterAnimation">@anim/scale_in</item>
+	</style>
+    
+	
+	<style name="infotextStyle">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/software_textColor_unselected</item>
+        <item name="android:layout_centerVertical">true</item>   
+        <item name="android:layout_marginRight">8dip</item>  
+    </style>
+	<style name="infotextTitleStyle">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">@dimen/text_margin_left</item>
+        <item name="android:textSize">@dimen/text_size_sixteen</item>
+        <item name="android:layout_centerVertical">true</item>  
+    </style>
+	<style name="infotextTitleStyletwo">
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/text_size_sixteen</item>
+        <item name="android:layout_centerVertical">true</item>  
+        <item name="android:layout_weight">1.3</item>  
+        <item name="android:gravity">right</item>  
+    </style>
+    <style name="infotextTitleStyleproperty">
+        <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">@dimen/text_margin_left_property</item>
+        <item name="android:textSize">@dimen/text_size_sixteen</item>
+        <item name="android:layout_centerVertical">true</item>  
+        <item name="android:layout_weight">3</item>  
+    </style>
+    
+	<!--github  -->
+	<style name="ListItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/trans</item>
+    </style>
+    
+	 <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner_loading</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+</resources>

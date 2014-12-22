@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/merchants_color" >
+ <!-- ?colorPrimary -->
+
+        <com.dazhongcun.widget.WPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/setting_title"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!--  -->
+        
+                <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/trans"
+            android:clickable="true"
+            android:drawableLeft="@drawable/back_seletor"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/text_size_sixteen" />
+        
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:paddingTop="12dip"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="修改资料" />
+
+                <ImageView
+                    android:id="@+id/row_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="作品上传" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="消息提醒" />
+
+                <!--
+                     <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+                -->
+
+                <com.dazhongcun.widget.ToggleButton
+                    android:id="@+id/toast"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+                </com.dazhongcun.widget.ToggleButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="清除缓存" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/updateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="版本更新" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="关于我们" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/list_selected"
+                android:clickable="true" >
+            </RelativeLayout>
+
+            <com.dazhongcun.widget.WPTextView
+                android:id="@+id/logout"
+                style="@style/NUXPrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="18dip"
+                android:layout_marginTop="24dip"
+                android:background="@drawable/flat_selector_red"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

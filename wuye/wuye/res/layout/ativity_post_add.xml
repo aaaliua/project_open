@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView  android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+         android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        >
+
+        <include layout="@layout/public_action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@drawable/tm_button_white_bg"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/post_edit_title"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/post"
+                    android:background="@null"
+                    android:hint="@string/post_edit_title_hint"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/tm_button_white_bg"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mtv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="@string/post_edit_content"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/subcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/mtv_03"
+                    android:background="@null"
+                    android:hint="@string/post_edit_content_hint"
+                    android:maxLength="200"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.linju.android_property.viewutils.NoScorllGridView
+                android:id="@+id/Photogridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="8dip"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="2dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

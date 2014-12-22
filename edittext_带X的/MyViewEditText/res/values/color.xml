@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="txt_gray">#263238</color>
+    <color name="txt_light_gray">#b0bec5</color>
+        <color name="transparent">#0000</color>
+
+</resources>

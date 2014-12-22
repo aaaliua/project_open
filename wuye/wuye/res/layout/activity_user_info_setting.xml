@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:id="@+id/setting_main"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_action_bar" />
+
+    <com.linju.android_property.viewutils.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E5E5E5"
+            android:orientation="vertical" >
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="12dip"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/reset_password" />
+
+
+                <ImageView
+                    android:id="@+id/row_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/touch_event" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:layout_toLeftOf="@+id/row_img2"
+                    android:text="未设置" />
+
+                <ImageView
+                    android:id="@+id/row_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/update_app" />
+
+                <TextView
+                    style="@style/infotextStyle"
+                    android:layout_toLeftOf="@+id/row_img3"
+                    android:text="v2.0" />
+
+                <ImageView
+                    android:id="@+id/row_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/clear_cache" />
+
+
+                <ImageView
+                    android:id="@+id/row_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="16dip"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/feedback" />
+
+                <ImageView
+                    android:id="@+id/row_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/service_center" />
+
+                <ImageView
+                    android:id="@+id/row_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="@dimen/tab_margin_top"
+                android:clickable="true"
+                android:background="@drawable/list_selected"  >
+
+                <TextView
+                    style="@style/infotextTitleStyle"
+                    android:text="@string/about" />
+
+                <ImageView
+                    android:id="@+id/row_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu_normal" />
+            </RelativeLayout>
+            
+            
+            
+             <Button
+                android:id="@+id/exit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:layout_marginTop="26dip"
+                android:background="@drawable/flat_selector_red"
+                android:text="@string/logout"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </com.linju.android_property.viewutils.BounceScrollView>
+
+</LinearLayout>

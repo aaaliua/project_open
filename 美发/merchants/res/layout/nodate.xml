@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="8dip"
+    android:layout_height="match_parent">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="没有找到相关数据"
+        />
+</RelativeLayout>

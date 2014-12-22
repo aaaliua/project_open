@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角的BG  点击焦点 背景50%透明度   如不需要圆角请设置radius为0-->
+
+
+    <!-- pressed -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <gradient android:angle="270" android:endColor="@color/default_bg_press" android:startColor="@color/default_bg_press" />
+
+            <corners android:radius="@dimen/image_corners" />
+        </shape></item>
+
+    <!-- focus -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/default_bg_press" android:startColor="@color/default_bg_press" />
+
+            <corners android:radius="@dimen/image_corners" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/default_bg_nomor" />
+
+            <corners android:radius="@dimen/image_corners" />
+        </shape></item>
+    <!--
+           android:bottomLeftRadius="4dip" 
+                android:bottomRightRadius="4dip" 
+                android:topLeftRadius="4dip" 
+                android:topRightRadius="4dip"
+    -->
+
+</selector>

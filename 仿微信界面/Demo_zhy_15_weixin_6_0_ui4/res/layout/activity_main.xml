@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.weixin6.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <com.zhy.weixin6.ui.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_start_conversation"
+            zhy:text="@string/tab_weixin"
+            zhy:text_size="12sp" />
+
+        <com.zhy.weixin6.ui.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_friendslist"
+            zhy:text="@string/tab_contact"
+            zhy:text_size="12sp" />
+
+        <com.zhy.weixin6.ui.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_emoticons"
+            zhy:text="@string/tab_find"
+            zhy:text_size="12sp" />
+
+        <com.zhy.weixin6.ui.ChangeColorIconWithTextView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon="@drawable/ic_menu_allfriends"
+            zhy:text="@string/tab_me"
+            zhy:text_size="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

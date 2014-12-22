@@ -1,0 +1,5 @@
+<resources>
+   
+    <dimen name="actionbar_img_dim">24dp</dimen>
+    <dimen name="tab_padding_LR">12dip</dimen>
+</resources>

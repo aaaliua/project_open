@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="software_textColor_selected">#00aeef</color>
+    <color name="software_textColor_unselected">#70000000</color>
+    
+     <color name="blue_pressed">#ff0099cc</color>
+    <color name="blue_normal">#ff33b5e5</color>
+    <color name="grey_medium">#999999</color>
+    <color name="gray_light">#ffb0b0b0</color>
+    <color name="action_bar_color">#00aeef</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="viewpager_top_btn">#503399cc</color>
+    <color name="viewpager_top_btn_press">#50003366</color>
+    <!-- bg color  背景选择器-->
+    <color name="list_bg_press">#EDEDED</color>
+    <color name="default_bg_press">#30ffffff</color>
+    <color name="default_bg_nomor">#00ffffff</color>
+    <color name="menu_color">#FFC74B46</color>
+    <color name="menu_color_press">#FFA24B46</color>
+    <!-- Radio的背景选择器 -->
+    <color name="radio_bg_nomor">#402E303C</color>
+    <color name="radio_bg_press">#40837384</color>
+    <!--nux color  -->
+    <color name="nux_eye_icon_color_open">@color/blue_light</color>
+    <color name="nux_eye_icon_color_closed">#c7c7c7</color>
+    <color name="nux_grey_button">#bbdded</color>
+    
+    <color name="blue_extra_light">#c8eefc</color>  <!-- (not in handbook) -->
+    <color name="blue_light">#78c8e6</color>        <!-- "light blue" -->
+    <color name="blue_new_kid">#2EA2CC</color>      <!-- "new kid on the block blue" -->
+    <color name="blue_medium">#1e8cbe</color>       <!-- "base lighter blue" -->
+    <color name="blue_dark">#0074a2</color>         <!-- "base darker blue" -->
+    <color name="blue_extra_dark">#005684</color>   <!-- "midnight blue" -->
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    
+    <color name="videoListItemContentColor">#909090</color>
+    <color name="divide_line">#E4E4E4</color>
+    <color name="drawer_divider">#ffffff</color>
+    <!-- ios7dialog -->
+     <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <!-- material design color -->
+     <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+</resources>
